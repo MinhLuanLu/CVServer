@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sender_email = os.getenv("Email")
+sender_email = os.getenv("sender_email")
 password = os.getenv('Password')
-recipient_email = os.getenv("Email")
+recipient_email = os.getenv("recipient_email")
 
 # Establish a secure SSL connection to the Gmail SMTP server
 def sendEmail(subject, body):
